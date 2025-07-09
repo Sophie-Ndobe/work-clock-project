@@ -7,24 +7,52 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>World Clock</h1>
         <select>
-            <option value="">Choose a city...</option>
+            <option value="" >Choose a city...</option>
             <option value="">Maseru</option>
             <option value="">Lisbon</option>
             <option value="">Cape Town</option>
             <option value="">Madrid</option>
         </select>
-        <div><span>Maseru </span><span>13:04:27</span></div>
-        <div><span>Madrid </span><span>08:12:38</span></div>
-        <div><span>Lisbon </span><span>16:27:05</span></div>
+        <div class="city">
+            <div>
+                <h2 >Canberra </h2>
+                <div class="date">09 July 2025</div>
+            </div>
+            <div class="time">22:23:15 <small>AM</small></div>
+        </div>
+        <div class="city">
+            <div>
+                <h2 >New York </h2>
+                <div class="date">09 July 2025</div>
+            </div>
+            <div class="time">08:23:27 <small>AM</small></div>
+        </div>
+        <div class="city">
+            <div>
+                <h2 >Madrid </h2>
+                <div class="date">09 July 2025</div>
+            </div>
+            <div class="time">14:23:45 <small>AM</small></div>
+        </div>
     </div>
 
-    <footer>This is an open-source project, coded by Sophie Ndobe and hosted on Netlify</footer>
+    <footer>This is an open-source project on
+        <a href="">github</a>, coded by
+        <strong><a href=" ">Sophie Ndobe</a> </strong>and hosted on
+        <a href="">Netlify</a></footer>
 
     <script src="javascript/index.js"></script>
 
