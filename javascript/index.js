@@ -33,6 +33,9 @@ madridTimeElement.innerHTML = madridTime;
 
 function updateTimeInformation(event) {
    let cityTimeZone = event.target.value;
+   if (cityTimeZone === "current"){
+      cityTimeZone = moment.tz.guess();
+   }
    let cityName = cityTimeZone;
    let cityTime = moment.tz(cityTimeZone);
    let updatingDate = cityTime.format("MMMM Do YYYY");
@@ -56,3 +59,5 @@ setInterval(updateDateTime, 1000);
 
 let selectElement = document.querySelector("#city");
 selectElement.addEventListener("change", updateTimeInformation);
+
+setInterval(updateTimeInformation, 1000);
