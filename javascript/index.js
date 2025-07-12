@@ -46,7 +46,7 @@ function updateTimeInformation(event) {
             <h2 >${cityName} </h2>
             <div class="date" id="ny-date">${updatingDate}</div>
          </div>
-         <div class="time" id="ny-time">${updatingTime}<small>${updatingAmPm}</small></div>
+         <div class="time" id="ny-time">${updatingTime}<small>  ${updatingAmPm}</small></div>
       </div>
    `;
 }
