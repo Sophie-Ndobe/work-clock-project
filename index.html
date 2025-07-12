@@ -19,43 +19,44 @@
 <body>
     <div class="container">
         <h1>World Clock</h1>
-        <select>
+        <select id="city">
             <option value="" >Choose a city...</option>
-            <option value="">Canberra</option>
-            <option value="">Lisbon</option>
-            <option value="">Cape Town</option>
-            <option value="">Madrid</option>
+            <option value="Australia/Canberra">Canberra</option>
+            <option value="Europe/Lisbon">Lisbon</option>
+            <option value="Africa/Johannesburg">Johannesburg</option>
+            <option value="Europe/Madrid">Madrid</option>
         </select>
-        <div class="city">
-            <div>
-                <h2 >Canberra </h2>
-                <div class="date" id="can-date"></div>
+        <div id="cities">
+            <div class="city">
+                <div>
+                    <h2 >Canberra</h2>
+                    <div class="date" id="can-date"></div>
+                </div>
+                <div class="time" id="can-time"><small></small></div>
             </div>
-            <div class="time" id="can-time"><small></small></div>
-        </div>
-        <div class="city">
-            <div>
-                <h2 >New York </h2>
-                <div class="date" id="ny-date"></div>
+            <div class="city">
+                <div>
+                    <h2 >New York </h2>
+                    <div class="date" id="ny-date"></div>
+                </div>
+                <div class="time" id="ny-time"><small></small></div>
             </div>
-            <div class="time" id="ny-time"><small></small></div>
-        </div>
-        <div class="city">
-            <div>
-                <h2 >Madrid </h2>
-                <div class="date" id="mad-date"></div>
+            <div class="city">
+                <div>
+                    <h2 >Madrid </h2>
+                    <div class="date" id="mad-date"></div>
+                </div>
+                <div class="time" id="mad-time"> <small></small></div>
             </div>
-            <div class="time" id="mad-time"> <small></small></div>
         </div>
     </div>
 
     <footer>This is an open-source project on
         <a href="">github</a>, coded by
-        <strong><a href=" ">Sophie Ndobe</a> </strong>and hosted on
-        <a href="">Netlify</a></footer>
+        <strong><a href="https://github.com/Sophie-Ndobe?tab=repositories">Sophie Ndobe</a> </strong>and hosted on
+        <a href="https://time-hop.netlify.app/">Netlify</a></footer>
 
     <script src="javascript/index.js"></script>
-
 
 </body>
 </html>
